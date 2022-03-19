@@ -64,9 +64,11 @@ using [Jest](https://facebook.github.io/jest/) with default settings.
 
 - Add test for rules functions
 - Design and implement the rule functions and define the input & output
+  - Added a rule template function as a helper for new functions in the future
 - Execute test and bug-fixing
 - Add notes at test for service, just define because it's a simple service and it would require to much time to add the tests
 - Implement the service, controller and router
+- Add JSDoc to type input params at rules and service
 - Test API with given cases
 
 # Proposal improvements
@@ -77,4 +79,8 @@ using [Jest](https://facebook.github.io/jest/) with default settings.
 
 - Rules config: If the changes are something really consistent it may be convenient to configure a database to store the products and rulse configuration so it's not required to restart the app to update the config each time.
 
-- Add Restful API test for proper error handling
+- API Rest: Add test for proper error handling
+
+- API Rest: add input validation with Joi
+
+- Rules: It can be improved by using classes and inheritance, an interface or abstract classes so each rule extends/implements a predefined class/interface
